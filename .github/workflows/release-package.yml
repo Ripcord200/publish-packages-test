@@ -12,6 +12,7 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: cd /home/runner/work/publish-packages-test/publish-packages-test
       - run: npm ci
 
   publish-gpr:
